@@ -1,8 +1,8 @@
-export interface Ship {
-    id: number;
-    crew: string;
-    passengers: string;
-    cargo: string;
-  };
-
-
+export interface InterfaceShip {
+  id: number;
+  name: string;
+  model: string;
+  crew: string;
+  passengers: string;
+  cargo_capacity: string;
+}

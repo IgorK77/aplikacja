@@ -1,24 +1,24 @@
 import { useState, useEffect } from "react";
 import { Container, ListGroup } from "react-bootstrap";
 import axios from "axios";
-import {Ship} from "./Ship";
+import { InterfaceShip } from "./Ship";
+import Ship from "./components/Ship";
 
 const ShipList = () => {
-  const [ships, setShips] = useState<Ship[]>([]);
-  
+  const [ships, setShips] = useState<InterfaceShip[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios.get(`https://swapi.dev/api/starships/`);
-      setShips(result.data);
+      setShips(result.data.results);
     };
     fetchData();
-  });
-return (
+  }, []);
+  return (
     <Container>
       <ListGroup>
         {ships.map((ship) => (
-          <ShipList key={ship.id} {...ship} />
+          <Ship key={ship.id} {...ship} />
         ))}
       </ListGroup>
     </Container>

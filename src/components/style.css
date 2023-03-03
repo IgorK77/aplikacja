@@ -1,0 +1,27 @@
+.all {
+  display: flex;
+  margin-left: 36em;
+  margin-top: 2em;
+  width: 50em;
+  background-color: #121212;
+  color: #e7f1f5;
+  border-radius: 15px;
+  border: 1px solid #f2e205;
+}
+
+h2 {
+  margin-left: 1em;
+}
+
+.spec {
+  margin-left: 5em;
+}
+body {
+  background-color: black;
+}
+h1 {
+  color: #f2e205;
+}
+b {
+  color: #f2e205;
+}
