@@ -26,3 +26,10 @@ h1 {
 b {
   color: #f2e205;
 }
+.row {
+  display: flex;
+  width: 100%;
+}
+.col {
+  width: 60%;
+}
