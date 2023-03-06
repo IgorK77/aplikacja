@@ -1,8 +1,6 @@
 .all {
-  display: flex;
-  margin-left: 36em;
-  margin-top: 2em;
-  width: 50em;
+  margin: 2em auto;
+  max-width: 50em;
   background-color: #121212;
   color: #e7f1f5;
   border-radius: 15px;
@@ -31,5 +29,5 @@ b {
   width: 100%;
 }
 .col {
-  width: 60%;
+  width: 56%;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { ListGroupItem } from "react-bootstrap";
+import { Container, ListGroupItem } from "react-bootstrap";
 import { InterfaceShip } from "../Ship";
 import "./style.css";
 
@@ -12,7 +12,7 @@ const Ship: React.FC<InterfaceShip> = ({
 }) => {
   return (
     <ListGroupItem>
-      <div className="all">
+      <Container className="all">
         <div className="row">
           <div className="col">
             <div className="na">
@@ -47,7 +47,7 @@ const Ship: React.FC<InterfaceShip> = ({
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </ListGroupItem>
   );
 };
